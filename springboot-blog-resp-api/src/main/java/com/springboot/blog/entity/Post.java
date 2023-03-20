@@ -55,6 +55,9 @@ public class Post {
 		this.description = description;
 		this.content = content;
 	}
+	public Post() {
+		// TODO Auto-generated constructor stub
+	}
 	
 	
 	
