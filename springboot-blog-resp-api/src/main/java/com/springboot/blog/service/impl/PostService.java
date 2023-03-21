@@ -11,4 +11,8 @@ public interface PostService {
 	public List<PostDto> getAllposts();
 
 	public PostDto getPostById(long id);
+	
+	public PostDto updatePost(PostDto postDto,Long id);
+	
+	void deletepostById(long id);
 }
