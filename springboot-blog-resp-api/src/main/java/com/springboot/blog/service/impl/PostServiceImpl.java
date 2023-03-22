@@ -1,7 +1,6 @@
 package com.springboot.blog.service.impl;
 
 import java.util.List;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 import org.modelmapper.ModelMapper;
@@ -53,7 +52,7 @@ public class PostServiceImpl implements PostService {
 	private PostDto mapToDto(Post post)
 	{
 		
-		PostDto postDto=modelMapper.map(post, PostDto.class);
+		PostDto postDto=modelMapper.map(post,PostDto.class);
 		
 		
 //		PostDto postDto =new PostDto();

@@ -56,13 +56,7 @@ public class Post {
 		this.content = content;
 	}
 	
-	public Post(Long id, String title, String description, String content) {
-		super();
-		this.id = id;
-		this.title = title;
-		this.description = description;
-		this.content = content;
-	}
+	
 	public Post() {
 		// TODO Auto-generated constructor stub
 	}
