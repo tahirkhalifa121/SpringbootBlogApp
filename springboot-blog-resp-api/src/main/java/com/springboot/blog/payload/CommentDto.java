@@ -1,10 +1,21 @@
 package com.springboot.blog.payload;
 
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Size;
+
 public class CommentDto {
 
 private long id;
+
+	@NotEmpty(message = "Name Should not be Null or Empty")
 	private String name;
+	@NotEmpty(message = "Email Should not be Null or Empty")
+	@Email
 	private String email;
+	
+	@NotEmpty
+	@Size(min = 10,message = "comment body must be 10 charachter")
 	private String body;
 	
 	public long getId() {
